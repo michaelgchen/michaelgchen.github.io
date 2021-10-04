@@ -1,0 +1,962 @@
+/* Your SCSS here. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/*
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+  */
+body {
+  font-size: 16px;
+}
+
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: center;
+  background: transparent;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-variant-ligatures: common-ligatures;
+  -moz-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Oswald";
+  line-height: 65px;
+  margin-bottom: 12px;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 0px;
+  margin-bottom: 12px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 11px;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+em {
+  font: 15px/30px "Montserrat", sans-serif;
+}
+
+strong, b {
+  font: 15px/30px "Montserrat", sans-serif;
+}
+
+small {
+  font-size: 11px;
+  line-height: inherit;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  font-size: 1.2em;
+}
+
+section {
+  margin: auto;
+}
+
+.responsive_container {
+  margin-inline: auto;
+  width: min(100%, 80rem);
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section.header {
+  padding: 0;
+  margin: auto;
+}
+
+section.header header {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+section.header header h1 {
+  text-align: center;
+  z-index: 100;
+}
+
+#navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+#navbar .menu li.active {
+  background-color: #feffad;
+  border-radius: 5%;
+  padding: 0.5vh;
+  transition: 0.3 ease background-color;
+}
+
+#navbar .menu li.active a {
+  color: #001838;
+  border-radius: 5%;
+  padding: 0.5vh;
+  transition: 0.3 ease background-color;
+}
+
+#navbar .menu a {
+  color: #f2f2f2;
+  font-weight: 500;
+  padding: 1.65vmax;
+}
+
+.navicon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 730px) {
+  #menu li:not(:first-child) {
+    display: none;
+  }
+
+  .navicon {
+    color: #faca70;
+    font-size: 22px;
+    margin-left: 30px;
+    right: 30px;
+    position: absolute;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 730px) {
+  #menu.responsive {
+    position: relative;
+  }
+
+  #menu.responsive li {
+    float: none;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+.video_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+#bg_video {
+  min-width: 100%;
+  min-height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+#name {
+  font-size: 4em;
+  color: #e9dbd3;
+  z-index: 100;
+}
+
+#chinese_name {
+  color: #e9dbd3;
+  z-index: 100;
+}
+
+#role {
+  z-index: 100;
+  color: #e9dbd3;
+  text-align: center;
+}
+
+section.about {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background: #c5b8bf url(../assets/origami.jpg) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #161618;
+  color: #FAF9F6;
+  text-align: center;
+}
+
+section.about .about_content {
+  margin: auto;
+  max-width: 70vw;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.professional_description {
+  position: relative;
+  text-align: center;
+  margin: 11.7vmax 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.col {
+  flex: 1;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.col_1 {
+  flex: 1;
+  padding: 0px 3.125vmax;
+  text-align: right;
+}
+
+.col_2 {
+  flex: 2;
+  padding: 0px 3.125vmax;
+  text-align: left;
+}
+
+#email {
+  color: #cffdbc;
+}
+
+#profile_pic {
+  float: left;
+  width: 15.625vmax;
+  height: 15.625vmax;
+  border-radius: 40%;
+  max-width: 100%;
+  height: auto;
+}
+
+.position {
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+}
+
+.company {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.date {
+  text-align: right;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.divider {
+  width: 0.18vmax;
+  margin: 0.53vmax 0;
+  background: black;
+}
+
+section.resume {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #FEF3DE;
+  color: #161618;
+  text-align: center;
+}
+
+section.resume .resume_content {
+  max-width: 980px;
+  width: 100%;
+}
+
+section .resume_subtitle {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  color: #161618;
+}
+
+section.resume_subsection {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+
+section.projects {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background: #c5b8bf url(../assets/bulb.jpg) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #F8F8FF;
+  color: #F8F8FF;
+  text-align: center;
+}
+
+section.projects .projects_content {
+  max-width: 90vmax;
+  width: 100%;
+  padding-top: 5%;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#website_img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5% 8%;
+  width: 100%;
+  max-width: 26.7vmax;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#tableau_img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5% 8%;
+  width: 100%;
+  max-width: 26.7vmax;
+}
+
+#tableau_img:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 8.912vmax;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+#app_img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5% 8%;
+  width: 100%;
+  max-width: 26.7vmax;
+}
+
+#app_img:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 8.912vmax;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal_content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 62.38vmax;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 62.38vmax;
+  text-align: center;
+  color: #ccc;
+  padding: 0.8912655971vmax 0;
+  height: 13.3689839572vmax;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal_content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 1.3368983957vmax;
+  right: 3.11942959vmax;
+  color: #f1f1f1;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+section.photos {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #FEF3DE;
+  color: #161618;
+  text-align: center;
+}
+
+section.photos .photos_content {
+  max-width: 1200px;
+  padding-top: 5%;
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel_track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: 250ms ease-in;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel_track_container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel_button_left {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.7825311943vmax;
+  width: 1.7825311943vmax;
+  left: -3.11942959vmax;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel_button_right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.7825311943vmax;
+  width: 1.7825311943vmax;
+  right: -3.11942959vmax;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel_button_right:hover {
+  height: 25px;
+  width: 25px;
+}
+
+.carousel_button_left:hover {
+  height: 2.2281639929vmax;
+  width: 2.2281639929vmax;
+}
+
+.carousel_indicators {
+  display: flex;
+  justify-content: center;
+  padding: 0 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 1.3368983957vmax;
+  height: 1.3368983957vmax;
+  background: rgba(30, 30, 30, 0.5);
+  margin: 0 1.0695187166vmax;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.carousel_indicator.active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+section.contact {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9faea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 115vh;
+  width: 100%;
+  background-color: #f9faea;
+  color: #FAF9F6;
+  text-align: center;
+}
+
+.contact_col {
+  flex: 1;
+  min-width: 400px;
+  text-align: center;
+}
+
+section.contact .contact_content {
+  padding-top: 0%;
+  width: 100%;
+}
+
+section.contact .contact_content h1 {
+  color: black;
+  text-align: center;
+}
+
+section.contact .contact_content h2 {
+  color: black;
+  text-align: center;
+}
+
+section.contact .contact_content p {
+  color: black;
+  text-align: center;
+}
+
+.fab {
+  display: inline-block;
+  line-height: 4.4563279857vmax;
+  color: white;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  vertical-align: bottom;
+  opacity: 1;
+}
+
+a {
+  color: #008314;
+}
+
+/**
+ * responsive:
+ * about
+ * ------------------------------------------------------------------- 
+ */
+.collapse {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 370px) {
+  .professional_description .collapse {
+    flex-flow: column wrap;
+    flex-wrap: nowrap;
+  }
+
+  .professional_description .col {
+    width: 100%;
+  }
+}
+/**
+ * responsive:
+ * contact
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width: 900px) {
+  .contact_col {
+    flex: 1;
+    padding: 20px 9%;
+    min-width: 0px;
+    text-align: center;
+  }
+
+  .contact_content h1 {
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  section .contact_content .row {
+    display: block;
+    justify-content: space-around;
+    z-index: 100;
+  }
+}
+#resume .section-intro h1 {
+  color: black;
+}
+
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+}
+
+#resume .timeline-content h4 {
+  text-align: left;
+  padding-right: 0px;
+  box-sizing: border-box;
+  color: green;
+}
+
+#resume .resume-header h2 {
+  color: #F06000;
+}
+
+#resume .resume-timeline {
+  max-width: 980px;
+}
+
+#resume .timeline-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+#resume .timeline-wrap::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 35%;
+  top: 0;
+}
+
+#resume .timeline-block {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+#resume .timeline-ico {
+  height: 4.8rem;
+  width: 4.8rem;
+  line-height: 4.8rem;
+  background: #313131;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 35%;
+  top: 0.9rem;
+  margin-left: -2.4rem;
+}
+
+#resume .timeline-ico i {
+  position: relative;
+  left: 0.05rem;
+  top: 0.2rem;
+}
+
+#resume .timeline-header {
+  float: left;
+  width: 35%;
+  padding-right: 60px;
+  text-align: right;
+}
+
+#resume .timeline-header h3 {
+  margin-bottom: 0;
+  padding-right: 60px;
+}
+
+#resume .timeline-header p {
+  font-family: "poppins-regular", sans-serif;
+  font-size: 1.6rem;
+  color: #888888;
+  padding-right: 60px;
+}
+
+#resume .timeline-content {
+  margin-left: 35%;
+  padding-left: 60px;
+}
+
+#resume .timeline-content p {
+  text-align: left;
+}
+
+#resume .timeline-content li {
+  text-align: left;
+  font-size: 1em;
+}
+
+#resume .timeline-content h4 {
+  position: relative;
+  padding-bottom: 1.8rem;
+  width: 100%;
+}
+
+#resume .timeline-content h4::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/**
+* responsive:
+* resume
+* ------------------------------------------------------------------- 
+*/
+@media only screen and (max-width: 1024px) {
+  #resume .timeline-header {
+    padding-right: 50px;
+  }
+
+  #resume .timeline-header h3 {
+    font-size: 1.8rem;
+  }
+
+  #resume .timeline-header p {
+    font-size: 1.4rem;
+  }
+
+  #resume .timeline-content {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #resume .timeline-wrap::before {
+    left: 2.9rem;
+  }
+
+  #resume .timeline-ico {
+    left: 2.9rem;
+  }
+
+  #resume .timeline-header {
+    float: none;
+    width: auto;
+    padding-right: 15px;
+    text-align: left;
+  }
+
+  #resume .timeline-header h3 {
+    font-size: 2rem;
+  }
+
+  #resume .timeline-header p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #resume .timeline-content {
+    margin: 0;
+  }
+
+  #resume .timeline-content h4 {
+    padding-bottom: 0;
+    padding-top: 2.1rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.7rem;
+  }
+
+  #resume .timeline-content h4::after {
+    bottom: auto;
+    top: 0;
+  }
+
+  #resume .timeline-header, #resume .timeline-content {
+    padding-left: 7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #resume .resume-header h2 {
+    font-size: 2.2rem;
+  }
+
+  #resume .timeline-wrap::before {
+    left: 2.4rem;
+  }
+
+  #resume .timeline-ico {
+    height: 3.6rem;
+    width: 3.6rem;
+    line-height: 3.6rem;
+    left: 2.4rem;
+    margin-left: -1.8rem;
+    font-size: 1.5rem;
+  }
+
+  #resume .timeline-header, #resume .timeline-content {
+    padding-left: 5.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

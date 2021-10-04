@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Michael Chen</title>
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+        <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <!-- header section -->
+        <section class="header" id="header">
+            <header>
+                <!-- navbar  -->
+                <nav id="navbar">
+                    <ul class="menu" id="menu">
+                        <li class="header active"><a href="#header" class="scroll">Home</a></li>
+                        <li class="about"><a href="#about" class="scroll">About</a></li>
+                        <li class="resume"><a href="#resume" class="scroll">Resume</a></li>
+                        <li class="projects"><a href="#projects" class="scroll">Projects</a></li>
+                        <li class="photos"><a href="#photos" class="scroll">Photographs</a></li>
+                        <li class="contact"><a href="#contact" class="scroll">Contact</a></li>
+                        
+                    </ul>
+                    <a href="javascript:void(0);" class="navicon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>   
+                    </a>
+                   
+                </nav>
+                
+                <!-- name and role  -->
+                <div class="row">
+                    <div class="col">
+                        <h1 id="name">Michael Guanyi <br> Chen  </h1> 
+                        <!-- <br> <h2 id="chinese_name">陳冠宇</h3> -->
+                        
+                        <h3 id="role">-Software Engineer</h3> 
+                    </div>
+                    
+                </div>
+                <!-- background video -->
+                <div class="video_container">
+                    <video autoplay muted loop id="bg_video">
+                        <source src="/assets/mountains.mp4" type="video/mp4">
+                    </video>
+                </div>  
+            </header>
+        </section>
+
+        <!-- about section / Multi Column-->
+        <section class="about" id="about">
+            <div class="about_content">
+                <h1 id="about">About</h1>  
+
+                <div>
+                    <img src="assets/michael1.jpg" id="profile_pic">
+                    <p class="intro profile">Hi there, my name is Michael Chen, I was born and raised in Rio de Janeiro, Brazil, Currently, 
+                        I'm a Computer Science student at the University of Illinois at Urbana-Champaign. Some of my hobbies are learning Mandarin, music concerts, fitness, fashion and cooking </p>
+                </div>
+                    
+                    <div class="professional_description">
+                        <div class="row">
+                            <div class="collapse" >
+                                <div class="col profile">
+                                    
+                                    <h4>Profile</h4>
+                                    <p>I'm currently looking for a full time software engineer position
+                                        in the US. If you think I'm a good fit, feel free to shoot me an email
+                                        at <a href = "mailto: michaelguanyichen@protonmail.com" id="email">michaelguanyichen@protonmail.com</a></p>
+                                    <h4>Name</h4>
+                                    <p>Michael Guanyi Chen</p>
+                                    <h4>Birth Date</h4>
+                                    <p>May 30, 2000</p>
+                                    <h4>Email</h4>
+                                    <p>michaelguanyichen@protonmail.com</p> <br>
+                                </div>
+                                <!-- <div class="collapse">  -->
+                                    <div class="col">
+                                        <h4>Programming Languages</h4>
+                                        <h6>(listed in order of experience)</h6> 
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Java</li>
+                                            <li>HTML/CSS/JS</li>
+                                            <li>C/C++</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h4 class="about_columns">Miscellaneous Skills</h4>
+                                        <ul>
+                                            <li>OOP</li>
+                                            <li>AI/ML</li>
+                                            <li>Git/CLI</li>
+                                            <li>Latex</li>
+                                            <li>MS Suite</li>
+                                            <li>React</li>
+                                        </ul>
+                                    </div>
+                                <!-- </div> -->
+                            </div>   
+                        </div> 
+                    </div>
+            </div>                
+        </section>
+
+
+        <div class="responsive_container">
+            <!-- Work Experience / Multi Column -->
+            <section class="resume" id="resume">
+                <div class="resume_content">
+                    <h1 class="resume_subtitle">Work Experience</h1>
+                     <!-- ...
+                    <div class="row">
+                        <div class="col_1">
+                            <h2 class="resume_subsection">Position</h2> <br>
+                            <h2 class="position">UI/UX Developer</h2>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+                            <h2 class="position">Software Developer</h2>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            <h2 class="position">Teacher Assistant</h2>
+            
+            
+                        </div>
+                        <div class="divider"></div>
+                        <div class="col_2">
+                            <h2 class="resume_subsection">Company</h2>
+                            <br>
+                            <h3 class="company">The Hub for Brand Innovation and Advertising Technology</h3>
+                            <h5 class="date">May 2021 – Aug 2021</h5>
+                            <ul>
+                                <li>Designed, prototyped and optimized the User Interface of the Brand Reputation Wellness monitoring system
+                                    reducing the total number of actions required in the user journey by 20%.</li>
+                                <li>Researched and developed UX-centered wireframes in Figma representing user-journey interactions according to
+                                        potential client's business goals testing for their information architecture and usability.</li>
+                            </ul>
+            
+                            <br>
+            
+                            <h3 class="company">Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign</p>
+                            <h5 class="date">Feb 2021 – May 2021</h5>
+                            <ul>
+                                <li>Worked for CE Professor Albert J. Valocchi in the conversion and maintenance of a series of Java Applets to Desktop
+                                    Java Applications, used in many courses throughout the CEE Department at UIUC and other universities around the world.</li>
+                                <li>Ideated and redesigned the whole user interface of the website using HTML, CSS and JavaScript,
+                                    giving it a more intuitive, informative and modern look.</li>
+                            </ul>
+                            <br>
+            
+                            <h3 class="company">Happy Code</h3>
+                            <h5 class="date">July 2019 – August 2019</h5>
+                            <ul>
+                                <li>Technology and programming school for K-12 students with class sizes varying from 3 - 20 students. Assisted teachers during class, guiding students in visual content creation; pitching product ideas; and digital ethics.</li>
+                                <li>Basic work with varied visual programming languages, game engines and software environments such as Unity; Scratch; App Inventor; Micro Bit; Construct; RPG Maker.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
+                    <!-- /timeline-block -->
+                    <div class="timeline-wrap">
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>UI/UX Developer</h3>
+                                <p>May 2021 – Aug 2021</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>The Hub for Brand Innovation and Advertising Technology</h4>
+                                <ul>
+                                    <li>Designed, prototyped and optimized the User Interface of the Brand Reputation Wellness monitoring system
+                                        reducing the total number of actions required in the user journey by 20%.</li>
+                                    <li>Researched and developed UX-centered wireframes in Figma representing user-journey interactions according to
+                                            potential client's business goals testing for their information architecture and usability.</li>
+                                </ul>
+                            </div>
+                        </div> <!-- /timeline-block -->
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <p>Feb 2021 – May 2021</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign</h4>
+                                <ul>
+                                    <li>Worked for CE Professor Albert J. Valocchi in the conversion and maintenance of a series of Java Applets to Desktop
+                                        Java Applications, used in many courses throughout the CEE Department at UIUC and other universities around the world.</li>
+                                    <li>Ideated and redesigned the whole user interface of the website using HTML, CSS and JavaScript,
+                                        giving it a more intuitive, informative and modern look.</li>
+                                </ul>
+                            </div>
+                        </div> <!-- /timeline-block -->
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Teacher Assistant</h3>
+                                <p>July 2019 – August 2019</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Happy Code</h4>
+                                <ul>
+                                    <li>Technology and programming school for K-12 students with class sizes varying from 3 - 20 students. Assisted teachers during class, guiding students in visual content creation; pitching product ideas; and digital ethics.</li>
+                                    <li>Basic work with varied visual programming languages, game engines and software environments such as Unity; Scratch; App Inventor; Micro Bit; Construct; RPG Maker.</li>
+                                </ul>
+                            </div>
+                        </div> <!-- /timeline-block -->
+                    </div>
+                    <h1 class="resume_subtitle">Background Education</h1>
+            
+                    <div class="timeline-wrap">
+                        <div class="timeline-block">
+                           <div class="timeline-ico">
+                            <i class="fa fa-graduation-cap"></i>
+                            </div>
+                           <div class="timeline-header">
+                              <h3>Bachelor's Degree</h3>
+                              <p>Aug 2018 - Present</p>
+                           </div>
+                           <div class="timeline-content">
+                              <h4>University of Illinois at Urbana-Champaign</h4>
+                           </div>
+                        </div> <!-- /timeline-block -->
+
+                     </div> <!-- /timeline-wrap -->
+                </div>
+        </div>
+
+        </section>
+
+        <!-- Projects / Modals -->
+        <section class="projects" id="projects">
+            <div class="projects_content">
+                <h1 id="projects_title">Projects</h1> 
+                
+                    <!--Personal Website Modal-->
+                    <img id="website_img" src="/assets/personal_website.jpg" alt="" >
+
+                    <!-- Personal Website Modal -->
+                    <div id="personal_website_modal" class="modal">
+                        
+                        <span class="close"><h1>&times;</h1></span>
+
+                        <h2>Personal Website</h2>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal_content" id="img01">
+                        <p>Created my own personal website using HTML, CSS and Vanilla JavaScript </p>
+                        <!-- Modal Caption (Image Text)
+                        <div id="caption"></div> -->
+                    </div>
+
+                    <img id="tableau_img" src="/assets/tableau.jpg"   alt="" >
+
+                    <!-- Tableau Website Modal -->
+                    <div id="tableau_modal" class="modal">
+                        
+                        <span class="close"><h1>&times;</h1></span>
+
+                        <h2>Tableau Covid Visualization</h2>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal_content" id="img02">
+                        <p>Created a visualization using Tableau </p>
+                        <a href="https://public.tableau.com/app/profile/michael.chen3145/viz/Covid_15928660585820/CovidDashboard" target=_blank>https://public.tableau.com/app/profile/michael.chen3145/viz/Covid_15928660585820/CovidDashboard</a>
+                        <!-- Modal Caption (Image Text)
+                        <div id="caption"></div> -->
+                    </div>
+
+                    <img id="app_img" src="/assets/app_img.jpg"    alt="">
+
+                    <!-- Tableau Website Modal -->
+                    <div id="app_modal" class="modal">
+                        
+                        <span class="close"><h1>&times;</h1></span>
+
+                        <h2>Grade's Journey App</h2>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal_content" id="img03">
+                        <p>Mobile App using Android Studio</p>
+                        <a href="https://www.youtube.com/watch?v=KtK36xCevmc" target=_blank>https://www.youtube.com/watch?v=KtK36xCevmc</a>
+                        <!-- Modal Caption (Image Text)
+                        <div id="caption"></div> -->
+                    </div>
+                    
+
+            </div>
+
+        </section>
+
+
+        <!-- Photos/Carousel -->
+        <section class="photos"  id="photos">
+            <div class="photos_content">  
+                <h1 id="photos_title">Photography</h1> 
+                <p>One of my hobbies is photographing, here you can 
+                    check some pictures that I've taken in my Olympus Camera:</p> 
+                <div class="carousel">
+                    <!-- left -->
+                    <button class="carousel_button_left hidden">
+                        <img src="/assets/left.svg" alt="">
+                    </button> 
+    
+                    <div class = "carousel_track_container">
+                        <ul class="carousel_track">
+                            <li class="carousel_slide active">
+                                <img class="carousel_img" src="/assets/chicago1.JPG" alt="">
+                                <p>Chicago</p>
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel_img" src="/assets/rio.JPG" alt="">
+                                <p>Chicago 2</p>
+
+    
+                            </li>
+    
+                            <li class="carousel_slide">
+                                <img class="carousel_img" src="/assets/chicago1.JPG" alt="">
+                            </li>
+    
+                        </ul>
+
+    
+                    </div>
+                    <!-- right -->
+                    <button class="carousel_button_right">
+                        <img src="/assets/right.svg" alt="">
+                    </button>
+
+                    <!-- indicator buttons -->
+                    <div class="carousel_indicators">
+                        <button class="carousel_indicator active"></button>
+                        <button class="carousel_indicator"></button>
+                        <button class="carousel_indicator"></button>
+                    </div>
+    
+
+                </div>
+
+            </div>
+           
+            
+        </section>
+
+        <!-- Contact/Footer -->
+        <section class="contact"  id="contact">
+            <footer>
+                <div class="contact_content"> 
+                    <h1>Contact</h1>
+             
+                    <div class="row">
+                        <div class="contact_col">
+                            <img class="fab" src="/assets/linkedin.svg" alt="">
+                            <h2>Let's connect</h2>
+                            <a href="https://www.linkedin.com/in/michael-g-chen/" target="_blank">linkedin.com/in/michael-g-chen/</a>
+                            
+                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <!-- <div class="col">
+                            <i class="fab fa-github fa-4x"></i>
+                            <h3></h3>
+
+                            
+                            
+                        </div>
+                     -->
+                        <div class="contact_col">
+                            <img class="fab" src="/assets/email.svg" alt="">
+                            <br>
+                            <h2>Email Me At</h2>
+                            <p>michaelguanyichen@gmail.com</p>
+                            <p>(217) 200-3448</p>
+                        </div>
+    
+                        <div class="contact_col">
+                            <img class="fab" src="/assets/smartphone.svg" alt="">
+                            <h2>Call Me At</h2>
+                            <p>(217) 200-3448</p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </section>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
+
