@@ -1,7 +1,7 @@
 
 /* Your SCSS here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap');
 
 //GENERAL ELEMENTS
 html {
@@ -75,11 +75,33 @@ small { font-size: 11px; line-height: inherit; }
 
 //LISTS
 ul{
-    list-style-position: inside;
+  list-style-position: inside;
+
+ //align bullet points
+  //display: inline-block;  
+  //text-align:left;
+}
+
+ul.skills {
+  display: inline-block; 
+  text-align:left; 
+  //margin-right: 40px;
+  //text-align:left;
+  //margin-right: 120px;
+  //padding: 50px;
 }
 
 li {
     font-size: 1.2em;
+    //float:left;
+    text-align: center;
+}
+
+.skills li {
+  //line-height: 25px;
+  text-align:left;
+  
+  //padding-left:0px;
 }
 
 //SECTIONS
