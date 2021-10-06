@@ -145,6 +145,7 @@ section.header header h1 {
     list-style:none; //may change this in the future
     display: inline-block;
 
+
 }
 
 #navbar .menu li.active{
@@ -156,6 +157,7 @@ section.header header h1 {
 
 #navbar .menu li.active a{
     color: rgb(0, 24, 56);
+    
     border-radius: 5%;
     padding: 0.5vh;
     transition: 0.3 ease background-color;
@@ -163,6 +165,8 @@ section.header header h1 {
 
 #navbar .menu a{
     color: $nav_font_color;
+    text-decoration: none;
+
     //font-size: 1.5vmax;
     font-weight: 500;
     //margin-left: 0px;
