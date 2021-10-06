@@ -113,8 +113,18 @@ ul {
   list-style-position: inside;
 }
 
+ul.skills {
+  display: inline-block;
+  text-align: left;
+}
+
 li {
   font-size: 1.2em;
+  text-align: center;
+}
+
+.skills li {
+  text-align: left;
 }
 
 section {
