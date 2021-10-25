@@ -218,7 +218,7 @@ section.header header h1 {
     display: block;
   }
 }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* Converts navbar to a collapsible bar */
 @media screen and (max-width: 730px) {
   #menu.responsive {
     position: relative;

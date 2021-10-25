@@ -259,11 +259,11 @@ for (var i = 0; i < spans.length; i++) {
 });
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
+function collapsibleNavBar() {
+  var nav = document.getElementById("menu");
+  if (nav.className === "menu") {
+    nav.className += " responsive";
   } else {
-    x.className = "menu";
+    nav.className = "menu";
   }
 }
