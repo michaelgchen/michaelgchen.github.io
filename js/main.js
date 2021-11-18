@@ -1,15 +1,10 @@
-/* Your JS here. */
-//console.log('Hello World!')
+
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  //do work
-
-  //the event occurred
+//the event occurred
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
-//console.log(slides)
-
 
 const nextButton = document.querySelector('.carousel_button_right');
 const prevButton = document.querySelector('.carousel_button_left');
@@ -20,8 +15,6 @@ const dots = Array.from(indicators.children);
 const setSlidePosition = (slide,index) => {
   slide.style.left = slideWidth*index + 'px';
 }
-
-
 
 //amount you are moving depend on the size of the track
 const slideSize = slides[0].getBoundingClientRect();
@@ -34,11 +27,6 @@ window.addEventListener('resize', function(event) {
   //amount you are moving depend on the size of the track
   const slideSize = slides[0].getBoundingClientRect();
   const slideWidth = slideSize.width;
-  /*
-  const setSlidePosition = (slide,index) => {
-    slide.style.left = slideWidth*index + 'px';
-  }
-  */
   slides.forEach((slide, index)=> {
     slides.forEach(setSlidePosition)
   })
@@ -62,7 +50,6 @@ const updateDots = (currentDot, clickedDot) => {
 //move slides left when click left button
 prevButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.active');
-  //console.log(currentSlide);
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = indicators.querySelector('.active');
   const previousDot = currentDot.previousElementSibling;
@@ -80,7 +67,6 @@ prevButton.addEventListener('click', e => {
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.active');
   const nextSlide = currentSlide.nextElementSibling;
-   //console.log(currentSlide);
   const currentDot = indicators.querySelector('.active');
   const nextDot = currentDot.nextElementSibling;
   const targetIndex = slides.findIndex(slide => slide === nextSlide)  
@@ -92,7 +78,7 @@ nextButton.addEventListener('click', e => {
 
 })
 
-//move according to the indicators
+//move according to the round indicators
 const hideArrows = (slides,prevButton,nextButton,targetIndex) =>{
 
   if (targetIndex === 0) {
@@ -134,9 +120,6 @@ indicators.addEventListener('click', e=>{
 
 
 
-
-
-
 // When the user scrolls down 150px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
@@ -167,9 +150,9 @@ window.addEventListener('scroll', ()=> {
   navLi.forEach(li => {
     //remove any previous active class
     li.classList.remove('active')
-    //console.log(current)
+
     if (li.classList.contains(current)) {
-      //console.log(li)
+
 
       li.classList.add('active')
       
@@ -186,7 +169,7 @@ window.addEventListener('scroll', ()=> {
 
 
 
-//MODALS MODALS MODALS 
+//MODALS 
 
 // Get the modal
 var modal = document.getElementById("personal_website_modal");
@@ -209,7 +192,7 @@ var modalImg2 = document.getElementById("img02")
 img2.onclick = function(){
   modal2.style.display = "block"; //displaying modal when the image is clicked
   modalImg2.src = this.src; //zoom in the img
-  //captionText.innerHTML = this.alt; //caption
+  
 }
 
 //third modal
@@ -242,21 +225,7 @@ for (var i = 0; i < spans.length; i++) {
        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
      }
   }
- }
- 
-// END MODALS 
-
-
-
-
-
-//test responsive navbar
-
-
-
-
-
-});
+}
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function collapsibleNavBar() {
@@ -267,3 +236,9 @@ function collapsibleNavBar() {
     nav.className = "menu";
   }
 }
+
+ 
+// END MODALS 
+//test responsive navbar
+});
+
