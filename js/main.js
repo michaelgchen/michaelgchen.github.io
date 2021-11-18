@@ -227,6 +227,14 @@ for (var i = 0; i < spans.length; i++) {
   }
 }
 
+
+
+ 
+// END MODALS 
+//test responsive navbar
+});
+
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function collapsibleNavBar() {
   var nav = document.getElementById("menu");
@@ -236,9 +244,3 @@ function collapsibleNavBar() {
     nav.className = "menu";
   }
 }
-
- 
-// END MODALS 
-//test responsive navbar
-});
-
